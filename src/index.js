@@ -16,14 +16,14 @@ refs.inputForm.addEventListener('input', debounce(onInputSerch, 1000));
 
 function onInputSerch() {
     const serchValue = refs.inputForm.value;
-    return fetchCountries(serchValue).then(data => dataIf(data));
+    return fetchCountries(serchValue).then(data => dataLengthIf(data));
 }
 
-function dataIf(data) {
-    if (data.lenght >= 2 && data.lenght <= 10) {
+function dataLengthIf(data) {
+    if (data.length >= 2 && data.length <= 10) {
        return appendListMarkup(data);
-    };
-    return appendCountryMarkup(data);
+    } else { return appendCountryMarkup(data) };
+    
 }
 
 function appendCountryMarkup(countrys) {
