@@ -13,3 +13,30 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.header-name {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.colums {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  margin-right: 30px;
+  font-size: 30px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.list {
+  font-size: 30px;
+  margin-top: 50px;
+  margin-left: 300px;
+}
